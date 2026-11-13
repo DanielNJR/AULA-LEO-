@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo-principal">Fundação de Ensino de Contagem</h1>
+        <p>Curso de Frontend</p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Manipulação do DOM</h2>
+            <p id="paragrafo-exercicio">Este é um parágrafo que será utilizado nos exercícios.</p>
+            <p class="destaque">Este é um texto com a classe destaque.</p>
+
+            <div class="container-caixas">
+                <div class="caixa">
+                    <h3>Caixa 1</h3>
+                    <p>Conteúdo da 1ª caixa.</p>
+                    <button class="btn-principal">Botão principal</button>
+                    <button class="btn-secundario">Botão secundário</button>
+                </div>
+                <div class="caixa">
+                    <h3>Caixa 2</h3>
+                    <p>Conteúdo da 2ª caixa.</p>
+                    <button class="btn-principal">Botão principal</button>
+                    <button class="btn-secundario">Botão secundário</button>
+                </div>
+                <div class="caixa">
+                    <h3>Caixa 3</h3>
+                    <p>Conteúdo da 3ª caixa.</p>
+                    <button class="btn-principal">Botão principal</button>
+                    <button class="btn-secundario">Botão secundário</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Lista de tecnologias</h2>
+            <ul id="lista-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+                <li>Rust</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Imagem</h2>
+            <img src="https://via.placeholder.com/150" alt="Exemplo">
+        </section>
+
+        <section>
+            <h2>Formulário</h2>
+            <form id="meu-formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="curso">Curso</label>
+                <select id="curso">
+                    <option value="">Selecione</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+
+                <label for="comentario">Comentário</label>
+                <textarea id="comentario"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tabela de alunos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Silva</td>
+                        <td>19</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Souza</td>
+                        <td>22</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Mariana Lima</td>
+                        <td>20</td>
+                        <td>JavaScript</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curso de Frontend - Manipulação do DOM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
